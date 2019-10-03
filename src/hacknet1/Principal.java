@@ -15,10 +15,12 @@ import terminal.Konsole1;
  */
 public class Principal {
      public static void main(String[] args) {
+         
          EquipoPC pc1 = new EquipoPC("pc001");
          String resultado = pc1.bootstrap();
          System.out.println(">>>>>>"+resultado);
          Konsole1 consola = pc1.connect();
+         consola.setTitle("HackNet Terminal");
         //Konsole1 consola = new Konsole1();
         consola.setSize(800, 600);
         consola.setVisible(true);
