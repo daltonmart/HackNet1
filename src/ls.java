@@ -1,13 +1,10 @@
 
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.HelpFormatter;
-import org.apache.commons.cli.Option;
-import org.apache.commons.cli.OptionGroup;
 import org.apache.commons.cli.Options;
 
 /*
@@ -39,7 +36,7 @@ public class ls {
         StringWriter out = new StringWriter();
         PrintWriter pw = new PrintWriter(out);
         
-        String path;
+        String path= "";
 
         ///////////////////////////////////////////////////////////////////////  
         // Fase 1: Configuramos las opciones de validación de entrada.  
@@ -66,16 +63,16 @@ public class ls {
             // Si el usuario ha especificado el puerto lo leemos          
             if (cmdLine.hasOption("p")) {
                 path = cmdLine.getOptionValue("p");
-            } else {
-                path="";
             }
 
             // Leemos la dirección IP. Sino existe generamos un error pues es un parámetro requerido.  
-            String ip = cmdLine.getOptionValue("l");
-            if (ip == null) {
-                throw new org.apache.commons.cli.ParseException("La direccion IP es requerida");
-            }
-            
+//            String ip = cmdLine.getOptionValue("l");
+//            if (ip == null) {
+//                pw.print("La direccion IP es requerida");
+//            }
+//            
+
+
             // ..............................................................  
             // Aquí irían las tareas que tuviera que realizar la aplicación   
             // ..............................................................  

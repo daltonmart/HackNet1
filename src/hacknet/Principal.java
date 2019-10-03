@@ -13,14 +13,18 @@ import terminal.Konsole;
  *
  * @author junta
  */
-public class HackNet {
+public class Principal {
+    
      public static void main(String[] args) {
          
          EquipoPC pc1 = new EquipoPC("pc001");
-         String resultado = pc1.bootstrap();
+         
+         String resultado = pc1.boot();
+         
          System.out.println(">>>>"+resultado);
          
          Konsole consola = pc1.connect();
+         
          consola.setTitle("HackNet Terminal");
         //Konsole1 consola = new Konsole();
         consola.setSize(800, 600);

@@ -34,7 +34,7 @@ public class EquipoPC {
         this.hostname = hostname;
     }
 
-    public String bootstrap() {
+    public String boot() {
         System.out.println("Booting pc " + hostname + " ...");
         String estado = "";
         try {
@@ -59,6 +59,7 @@ public class EquipoPC {
 
     public Konsole connect() {
         Konsole terminal = new Konsole();
+        
         return new Konsole();
     }
 
