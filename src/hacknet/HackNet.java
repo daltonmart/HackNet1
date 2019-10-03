@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hacknet1;
+package hacknet;
 
 import Equipo.EquipoPC;
 import Equipo.EquipoPC;
@@ -13,7 +13,7 @@ import terminal.Konsole1;
  *
  * @author junta
  */
-public class Principal {
+public class HackNet {
      public static void main(String[] args) {
          
          EquipoPC pc1 = new EquipoPC("pc001");
