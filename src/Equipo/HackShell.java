@@ -9,7 +9,15 @@ package Equipo;
  *
  * @author junta
  */
-class ShellTerminal {
-    public ShellTerminal() {        
+class HackShell {
+    private String hostname = "localhost";
+    private String ip = "127.0.0.1";
+    private boolean servicios = false;
+    private SistemaArchivos fs;
+
+    public HackShell() {
+        
     } 
+    
+    
 }

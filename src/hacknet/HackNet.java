@@ -7,7 +7,7 @@ package hacknet;
 
 import Equipo.EquipoPC;
 import Equipo.EquipoPC;
-import terminal.Konsole1;
+import terminal.Konsole;
 
 /**
  *
@@ -18,10 +18,11 @@ public class HackNet {
          
          EquipoPC pc1 = new EquipoPC("pc001");
          String resultado = pc1.bootstrap();
-         System.out.println(">>>>>>"+resultado);
-         Konsole1 consola = pc1.connect();
+         System.out.println(">>>>"+resultado);
+         
+         Konsole consola = pc1.connect();
          consola.setTitle("HackNet Terminal");
-        //Konsole1 consola = new Konsole1();
+        //Konsole1 consola = new Konsole();
         consola.setSize(800, 600);
         consola.setVisible(true);
 

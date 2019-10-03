@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import terminal.Konsole1;
+import terminal.Konsole;
 
 /**
  *
@@ -25,7 +25,7 @@ public class EquipoPC {
     private String ip = "127.0.0.1";
     private boolean servicios = false;
     private SistemaArchivos fs;
-    private ShellTerminal shell;
+   // private ShellTerminal shell;
 
     public EquipoPC() {
     }
@@ -46,7 +46,7 @@ public class EquipoPC {
             //p.load(new FileReader(""+hostname+".properties"));   //propiedades en archivo en disco
             //p.store(propertiesStream,"un comentario");
             propertiesStream.close();
-            System.out.println("uno=" + p.getProperty("hostname"));
+            this.setHostname(p.getProperty("hostname"));
             estado = hostname + ": Boot completo";
         } catch (FileNotFoundException ex) {
             Logger.getLogger(EquipoPC.class.getName()).log(Level.SEVERE, null, ex);
@@ -57,8 +57,16 @@ public class EquipoPC {
         return estado;
     }
 
-    public Konsole1 connect() {
-        return new Konsole1();
+    public Konsole connect() {
+        Konsole terminal = new Konsole();
+        return new Konsole();
+    }
+
+    private void setHostname(String hostname) {
+        this.hostname = hostname;
+    }
+    private String getHostname() {
+        return this.hostname;        
     }
 
 }
