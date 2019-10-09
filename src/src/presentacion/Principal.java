@@ -3,9 +3,10 @@ package src.presentacion;
 
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
-import src.logica.ControladorSesion;
 import logica.Historia;
 import logica.UsuariosDelJuego;
+import src.logica.*;
+
 
 
 public final class Principal extends javax.swing.JFrame {

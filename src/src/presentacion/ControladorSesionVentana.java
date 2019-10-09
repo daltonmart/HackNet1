@@ -1,20 +1,17 @@
 
 package src.presentacion;
 
-import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
-import src.logica.ControladorSesion;
 import static src.presentacion.Principal.crSesion;
-import static src.presentacion.Principal.usuariosDelJuego;
 
 public class ControladorSesionVentana extends javax.swing.JFrame {
 
     private int nroCampaniaElegidoInterfaz;
     
     public ControladorSesionVentana() {
-        crSesion.setUsuariosDeJuego(usuariosDelJuego);
         initComponents();
         this.setLocationRelativeTo(null);
+ //       crSesion.setUsuariosDeJuego(usuariosDelJuego);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
