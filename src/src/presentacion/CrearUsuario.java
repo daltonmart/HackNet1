@@ -1,11 +1,11 @@
 
-package presentacion;
+package src.presentacion;
 
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
 import logica.ControladorUsuario;
 import logica.UsuarioJuego;
-import static presentacion.Principal.usuariosDelJuego;
+import static src.presentacion.Principal.usuariosDelJuego;
 
 public class CrearUsuario extends javax.swing.JFrame {
     public ControladorUsuario crUsr=new ControladorUsuario();

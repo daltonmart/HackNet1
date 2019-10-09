@@ -1,10 +1,10 @@
 
-package logica;
+package src.logica;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-import static presentacion.Principal.historia;
+import static src.presentacion.Principal.historia;
 
 public class ControladorSesion {
     private UsuariosDelJuego usuariosDeJuego;

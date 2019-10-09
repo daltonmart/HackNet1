@@ -1,5 +1,5 @@
 
-package presentacion;
+package src.presentacion;
 
 import AppPackage.AnimationClass;
 import java.awt.event.KeyEvent;
@@ -10,8 +10,8 @@ import javax.swing.text.BadLocationException;
 //import logica.Directorio;
 //import static logica.EstructuraDirectorios.generarEstructura;
 import logica.TerminalLogica;
-import static presentacion.Principal.crSesion;
-import static presentacion.Principal.historia;
+import static src.presentacion.Principal.crSesion;
+import static src.presentacion.Principal.historia;
 
 
 public class Terminal extends javax.swing.JFrame {

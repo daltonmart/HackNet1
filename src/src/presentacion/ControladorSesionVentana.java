@@ -1,11 +1,11 @@
 
-package presentacion;
+package src.presentacion;
 
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
-import logica.ControladorSesion;
-import static presentacion.Principal.crSesion;
-import static presentacion.Principal.usuariosDelJuego;
+import src.logica.ControladorSesion;
+import static src.presentacion.Principal.crSesion;
+import static src.presentacion.Principal.usuariosDelJuego;
 
 public class ControladorSesionVentana extends javax.swing.JFrame {
 

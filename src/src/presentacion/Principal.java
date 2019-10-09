@@ -1,13 +1,10 @@
 
-package presentacion;
+package src.presentacion;
 
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
-import logica.Campania;
-import logica.ControladorSesion;
-import logica.ControladorUsuario;
+import src.logica.ControladorSesion;
 import logica.Historia;
-import logica.Mision;
 import logica.UsuariosDelJuego;
 
 
