@@ -1,7 +1,6 @@
 
 package src.presentacion;
 
-import AppPackage.AnimationClass;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;

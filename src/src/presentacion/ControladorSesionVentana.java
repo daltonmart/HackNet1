@@ -2,7 +2,11 @@
 package src.presentacion;
 
 import javax.swing.JOptionPane;
-import static src.presentacion.Principal.crSesion;
+import logica.ControladorSesion;
+import presentacion.Principal;
+import presentacion.Terminal;
+import static presentacion.Principal.crSesion;
+import static presentacion.Principal.usuariosDelJuego;
 
 public class ControladorSesionVentana extends javax.swing.JFrame {
 
@@ -103,7 +107,7 @@ public class ControladorSesionVentana extends javax.swing.JFrame {
         jPanel2.add(jLabelingresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, -1, -1));
 
         jLabelEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/Enter_ON.png"))); // NOI18N
-        jLabelEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jLabelEntrar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabelEntrarMouseClicked(evt);

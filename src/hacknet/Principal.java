@@ -6,8 +6,7 @@
 package hacknet;
 
 import Equipo.EquipoPC;
-import Equipo.EquipoPC;
-import terminal.Konsole;
+import terminal.Terminal;
 
 /**
  *
@@ -23,9 +22,9 @@ public class Principal {
          
          System.out.println(">>>>"+resultado);
          
-         Konsole consola = pc1.connect();
+         Terminal consola = pc1.connect();
          
-         consola.setTitle("HackNet Terminal");
+        
         //Konsole1 consola = new Konsole();
         consola.setSize(800, 600);
         consola.setVisible(true);

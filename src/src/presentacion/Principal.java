@@ -1,6 +1,8 @@
 
 package src.presentacion;
 
+import src.presentacion.ControladorSesionVentana;
+import src.presentacion.BorrarUsuario;
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
 import logica.Historia;
