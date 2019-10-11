@@ -1,13 +1,12 @@
 
-package presentacion;
+package src.presentacion;
 
-import AppPackage.AnimationClass;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import logica.ControladorUsuario;
-import logica.UsuarioJuego;
+import presentacion.Principal;
 import static presentacion.Principal.usuariosDelJuego;
 
 public class BorrarUsuario extends javax.swing.JFrame {
@@ -64,7 +63,7 @@ public class BorrarUsuario extends javax.swing.JFrame {
         jpanelEncabezadoLayout.setHorizontalGroup(
             jpanelEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelEncabezadoLayout.createSequentialGroup()
-                .addContainerGap(570, Short.MAX_VALUE)
+                .addContainerGap(634, Short.MAX_VALUE)
                 .addComponent(jlMinimizar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jlCerrar))
@@ -75,7 +74,7 @@ public class BorrarUsuario extends javax.swing.JFrame {
                 .addGroup(jpanelEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jlCerrar)
                     .addComponent(jlMinimizar))
-                .addGap(0, 28, Short.MAX_VALUE))
+                .addGap(0, 60, Short.MAX_VALUE))
         );
 
         getContentPane().add(jpanelEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 60));
@@ -109,7 +108,7 @@ public class BorrarUsuario extends javax.swing.JFrame {
         jPanel2.add(jLabelBorrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 130, 40));
 
         jLabelEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/fondoEnter.png"))); // NOI18N
-        jLabelEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabelEntrar.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel2.add(jLabelEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, -1, -1));
 
         jLabelSubfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/SubFondoIngresar.png"))); // NOI18N
