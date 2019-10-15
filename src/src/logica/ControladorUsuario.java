@@ -1,5 +1,5 @@
 
-package logica;
+package src.logica;
 
 import java.io.IOException;
 import javax.swing.JOptionPane;

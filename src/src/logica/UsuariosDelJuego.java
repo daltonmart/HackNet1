@@ -1,6 +1,6 @@
 
 
-package logica;
+package src.logica;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

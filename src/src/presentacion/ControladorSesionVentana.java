@@ -2,11 +2,9 @@
 package src.presentacion;
 
 import javax.swing.JOptionPane;
-import logica.ControladorSesion;
-import presentacion.Principal;
-import presentacion.Terminal;
-import static presentacion.Principal.crSesion;
-import static presentacion.Principal.usuariosDelJuego;
+import src.presentacion.Principal;
+import terminal.Terminal;
+import static src.presentacion.Principal.crSesion;
 
 public class ControladorSesionVentana extends javax.swing.JFrame {
 
@@ -38,9 +36,9 @@ public class ControladorSesionVentana extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpanelEncabezado.setBackground(new java.awt.Color(0, 0, 0));
+        jpanelEncabezado.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jlCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/icons8_Multiply_32px_1.png"))); // NOI18N
         jlCerrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -48,6 +46,7 @@ public class ControladorSesionVentana extends javax.swing.JFrame {
                 jlCerrarMouseClicked(evt);
             }
         });
+        jpanelEncabezado.add(jlCerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, -1, -1));
 
         jlMinimizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/icons8_Expand_Arrow_32px_1.png"))); // NOI18N
         jlMinimizar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -55,27 +54,7 @@ public class ControladorSesionVentana extends javax.swing.JFrame {
                 jlMinimizarMouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout jpanelEncabezadoLayout = new javax.swing.GroupLayout(jpanelEncabezado);
-        jpanelEncabezado.setLayout(jpanelEncabezadoLayout);
-        jpanelEncabezadoLayout.setHorizontalGroup(
-            jpanelEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpanelEncabezadoLayout.createSequentialGroup()
-                .addContainerGap(570, Short.MAX_VALUE)
-                .addComponent(jlMinimizar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jlCerrar))
-        );
-        jpanelEncabezadoLayout.setVerticalGroup(
-            jpanelEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpanelEncabezadoLayout.createSequentialGroup()
-                .addGroup(jpanelEncabezadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jlCerrar)
-                    .addComponent(jlMinimizar))
-                .addGap(0, 28, Short.MAX_VALUE))
-        );
-
-        getContentPane().add(jpanelEncabezado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 60));
+        jpanelEncabezado.add(jlMinimizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 0, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -122,7 +101,20 @@ public class ControladorSesionVentana extends javax.swing.JFrame {
         jLabelFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/presentacion/imagenes/electrograma.gif"))); // NOI18N
         jPanel2.add(jLabelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 518));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 640, 460));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jpanelEncabezado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jpanelEncabezado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

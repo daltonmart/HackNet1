@@ -6,7 +6,7 @@ import src.presentacion.BorrarUsuario;
 import AppPackage.AnimationClass;
 import javax.swing.JOptionPane;
 import logica.Historia;
-import logica.UsuariosDelJuego;
+import src.logica.UsuariosDelJuego;
 import src.logica.*;
 
 
